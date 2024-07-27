@@ -1,0 +1,54 @@
+
+body {
+    
+    font-family: Arial, sans-serif;
+      background-image:url(/assets/images/photo.jpeg);
+background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.container {
+    margin-bottom: 40px;
+    background-color: #fff transparent;
+    padding: 20px;
+    box-shadow:0 0 10px 10px black;
+    border-radius: 10px;
+}
+.container:hover{
+
+    box-shadow:0 0 5px 5px black; 
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-shadow: 0 0 5px red;
+}
+
+.donor-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.donor-table th, .donor-table td {
+    border: 2px solid #f1ebeb;
+    padding: 8px;
+    text-align: left;
+  
+}
+
+.donor-table th {
+    background-color: #1e0e0e;
+    color: #f0ebeb;
+}
+
+
+.donor-table tr{
+    background-color: #ddd;
+}

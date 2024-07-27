@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Data Table</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+                    <!-- Alert Message-->
+
+   {{#if datainsert}}
+        <script>
+            alert('Data Insert successfully😀!')
+        </script>
+    {{/if}}
+    <div class="container">
+        <h1>Donor Data Table</h1>
+        <table class="donor-table">
+            <thead>
+                <tr>
+                    
+                    <th>Name</th>
+                     <th>Phone</th>
+                    <th>Email</th>
+                    <th> Blood_type</th>
+                     <th>city</th>
+                     <th>state</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>{{profile}}</td>
+                    <td>{{phone}}</td>
+                    <td>{{email}}</td>
+                    <td>{{blood_type}}</td>
+                    <td>{{city}}</td>
+                    <td>{{state}}</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

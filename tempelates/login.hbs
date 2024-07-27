@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+ body {
+    
+    font-family: Arial, sans-serif;
+      background-image:url(/assets/images/about-banner.png);
+background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff transparent;
+   
+    border-radius: 10px;
+      box-shadow: 0px 5px 8px 10px rgb(103, 99, 99);
+  height: 300px;
+  width:100%;
+  padding: 30px;
+}
+
+form:hover{
+ box-shadow: 0px 10px 8px 8px rgb(189, 180, 180);
+      
+}
+
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 4px black;
+}
+input:hover{
+
+     box-shadow: 0px 5px 10px rgb(52, 47, 47); 
+}
+
+input[type="submit"] {
+    width: 100%;
+   background-color:green;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgb(74, 70, 70);
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(42, 146, 42);
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color:red;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #f90707;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form action="/login" method="post">
+        <h2>Login</h2>
+        <input type="text" name="name" placeholder="Username" required autocomplete="off">
+        <input type="password"name="password" placeholder="Password" required autocomplete="off">
+       <input type="submit" class="sub">
+           <a href="/">Create New Account</a>
+    </form>
+
+</div>
+
+</body>
+</html>
